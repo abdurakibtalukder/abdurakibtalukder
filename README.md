@@ -1,16 +1,55 @@
-## Hi there 👋
+; ============================================
+; README.md
+; ============================================
+; Author: Abdur Rakib Talukder
+; Motto : No means next opportunity — keep moving.
+; ============================================
 
-<!--
-**abdurakibtalukder/abdurakibtalukder** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+section .data
+    name        db "Rakib", 0
+    role        db "Student | Learner | Developer", 0
+    passion     db "I like tough code.", 0
+    mindset     db "No means next opportunity.", 0
 
-Here are some ideas to get you started:
+section .text
+    global _start
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+_start:
+
+    ; Initialize mindset
+    mov eax, LEARN
+    call practice_daily
+
+    ; Solve problems
+    mov ebx, CHALLENGES
+    call solve
+
+    ; Debug life
+    call debug
+    jmp improve
+
+practice_daily:
+    ; Keep coding
+    inc skill_level
+    ret
+
+solve:
+    ; Break problem
+    ; Think
+    ; Build solution
+    ret
+
+debug:
+    ; Find errors
+    ; Fix errors
+    ; Repeat
+    ret
+
+improve:
+    ; Infinite growth loop
+    jmp practice_daily
+
+; ============================================
+; End of File
+; Keep Moving Forward.
+; ============================================
