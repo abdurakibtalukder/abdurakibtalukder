@@ -1,55 +1,26 @@
-; ============================================
-; README.md
-; ============================================
-; Author: Abdur Rakib Talukder
-; Motto : No means next opportunity — keep moving.
-; ============================================
+import SoftwareDeveloper from 'rakib';
 
-section .data
-    name        db "Rakib", 0
-    role        db "Student | Learner | Developer", 0
-    passion     db "I like tough code.", 0
-    mindset     db "No means next opportunity.", 0
+class Bio extends SoftwareDeveloper {
+  name     = 'Abdur Rakib Talukder';
+  title    = 'Software Developer';
+  location = 'Bangladesh';
+  mindset  = 'No means next opportunity — keep moving.';
+}
 
-section .text
-    global _start
+class Skills extends SoftwareDeveloper {
+  frontend = ['HTML', 'CSS', 'JavaScript'];
+  backend  = ['Python', 'PHP', 'Java', 'Kotlin'];
+  tools    = ['Git', 'VS Code'];
+}
 
-_start:
+class Mission extends SoftwareDeveloper {
+  build() {
+    return 'Create clean and useful applications.';
+  }
 
-    ; Initialize mindset
-    mov eax, LEARN
-    call practice_daily
+  improve() {
+    return 'Learn something new every day.';
+  }
+}
 
-    ; Solve problems
-    mov ebx, CHALLENGES
-    call solve
-
-    ; Debug life
-    call debug
-    jmp improve
-
-practice_daily:
-    ; Keep coding
-    inc skill_level
-    ret
-
-solve:
-    ; Break problem
-    ; Think
-    ; Build solution
-    ret
-
-debug:
-    ; Find errors
-    ; Fix errors
-    ; Repeat
-    ret
-
-improve:
-    ; Infinite growth loop
-    jmp practice_daily
-
-; ============================================
-; End of File
-; Keep Moving Forward.
-; ============================================
+export default new Bio();
