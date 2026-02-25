@@ -1,3 +1,5 @@
+```js
+
 import SoftwareDeveloper from 'rakib';
 
 class Bio extends SoftwareDeveloper {
@@ -24,3 +26,4 @@ class Mission extends SoftwareDeveloper {
 }
 
 export default new Bio();
+```
