@@ -1,29 +1,25 @@
 ```js
-
-import SoftwareDeveloper from 'rakib';
-
-class Bio extends SoftwareDeveloper {
-  name     = 'Abdur Rakib Talukder';
-  title    = 'Software Developer';
-  location = 'Bangladesh';
-  mindset  = 'No means next opportunity — keep moving.';
-}
-
-class Skills extends SoftwareDeveloper {
-  frontend = ['HTML', 'CSS', 'JavaScript'];
-  backend  = ['Python', 'PHP', 'Java', 'Kotlin'];
-  tools    = ['Git', 'VS Code'];
-}
-
-class Mission extends SoftwareDeveloper {
-  build() {
-    return 'Create clean and useful applications.';
+class Philosophy {
+  life() {
+    return 'Life is limited. Time will not wait.';
   }
 
-  improve() {
-    return 'Learn something new every day.';
+  mindset() {
+    return 'Every "no" is the next opportunity — keep moving.';
+  }
+
+  growth() {
+    return 'Learn daily. Improve constantly. Stay curious.';
+  }
+
+  mission() {
+    return 'Build clean, useful, and meaningful things.';
+  }
+
+  purpose() {
+    return 'Make life better — even in small ways.';
   }
 }
 
-export default new Bio();
+export default new Philosophy();
 ```
