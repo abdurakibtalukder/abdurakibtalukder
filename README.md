@@ -10,46 +10,34 @@
 
 <br>
 
-```asm
-; ═══════════════════════════════════════════════════
-;  IDENTITY.ASM — abdurakibtalukder
-; ═══════════════════════════════════════════════════
+```js
+const abdurakibtalukder = {
 
-section .data
-    name        db  "Abdul Rakib Talukder", 0
-    age         db  15
-    location    db  "Bangladesh", 0
-    username    db  "@abdurakibtalukder", 0
+  name        : 'Abdul Rakib Talukder',
+  age         : 15,                              // still compiling...
+  location    : 'Bangladesh',
+  username    : '@abdurakibtalukder',
 
-section .education
-    school      db  "Ambition Public School, Bhairab", 0
-    degree      db  "Humanities — Arts & ICT", 0
-    grad_year   dw  2026
-    field       db  "Software Development", 0
+  education: {
+    school    : 'Ambition Public School, Bhairab',
+    degree    : 'Humanities — Arts & ICT',
+    field     : 'Software Development',
+    status    : `graduating in ${2026}`,         // T-minus loading...
+  },
 
-section .career
-    role        db  "Full Stack Developer", 0
-    status      db  "BUSY", 0
-    stack       db  "JavaScript", "React", "Node.js", "Python"
-    stack_len   equ $ - stack
+  career: {
+    role      : 'Full Stack Developer',
+    stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
+    status    : 'busy()',                        // do not disturb 🚧
+    openTo    : ['collabs', 'open source', 'cool ideas'],
+  },
 
-section .hobbies
-    idx_0       db  "Open Source", 0
-    idx_1       db  "Planning", 0
-    idx_2       db  "Cycling", 0
-    idx_3       db  "Gaming", 0
+  hobbies     : ['Open Source', 'Planning', 'Cycling', 'Gaming'],
 
-section .text
-global _start
+  philosophy  : 'Build clean, useful, and meaningful things.',
 
-_start:
-    MOV  AX,  [age]                     ; load current age
-    CMP  AX,  18                        ; are we an adult yet?
-    JL   .still_learning                ; nope — keep grinding
+  getAge()    { return Date.now() - new Date('2009').getTime(); },
+  isAvailable() { return this.career.status !== 'busy()'; },     // false 💀
 
-.still_learning:
-    PUSH "Build clean, useful,"
-    PUSH "and meaningful things."
-    CALL philosophy
-    JMP  _start                         ; loop forever — never stop
+};
 ```
