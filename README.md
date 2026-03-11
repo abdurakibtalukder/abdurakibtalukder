@@ -33,7 +33,7 @@ const abdurakibtalukder = {
     currently : 'Busy',
   },
 
-  hobbies     : ['Open Source', 'UI Design', 'Cycling', 'Gaming'],
+  hobbies     : ['Open Source', 'Planning', 'Cycling', 'Gaming'],
 
   philosophy  : 'Build clean, useful, and meaningful things.',
 };
