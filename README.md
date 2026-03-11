@@ -36,7 +36,7 @@ const abdurakibtalukder = {
 
   philosophy  : 'Build clean, useful, and meaningful things.',
 
-  getAge()    { return Date.now() - new Date('20011').getTime(); },
+  getAge()    { return Date.now() - new Date('2011').getTime(); },
   isAvailable() { return this.career.status !== 'busy()'; },
 
 };
