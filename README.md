@@ -6,6 +6,8 @@
   </picture>
 </p>
 
+<br>
+
 ```js
 class Philosophy {
   life() {
