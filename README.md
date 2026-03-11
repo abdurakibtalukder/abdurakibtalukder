@@ -29,7 +29,7 @@ const abdurakibtalukder = {
   career: {
     role      : 'Full Stack Developer',
     stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
-    status    : 'busy()',                        // do not disturb 🚧
+    status    : 'busy()',                     
     openTo    : ['collabs', 'open source', 'cool ideas'],
   },
 
@@ -38,7 +38,7 @@ const abdurakibtalukder = {
   philosophy  : 'Build clean, useful, and meaningful things.',
 
   getAge()      { return Date.now() - new Date('2011').getTime(); },
-  isAvailable() { return this.career.status !== 'busy()'; },      // false 💀
+  isAvailable() { return this.career.status !== 'busy()'; },
 
 };
 ```
