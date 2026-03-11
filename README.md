@@ -11,27 +11,33 @@
 <br>
 
 ```js
-class Philosophy {
-  life() {
-    return 'Life is limited. Time will not wait.';
-  }
+const abdurakibtalukder = {
+  name        : 'Abdul Rakib Talukder',
+  age         : 22,                          // ← your age
+  location    : 'Dhaka, Bangladesh',         // ← your location
 
-  mindset() {
-    return 'Every "no" is the next opportunity — keep moving.';
-  }
+  social: {
+    github    : '@abdurakibtalukder',
+    linkedin  : '@abdurakibtalukder',        // ← your handle
+    twitter   : '@abdurakibtalukder',        // ← your handle
+    instagram : '@abdurakibtalukder',        // ← your handle
+  },
 
-  growth() {
-    return 'Learn daily. Improve constantly. Stay curious.';
-  }
+  education: {
+    degree    : 'BSc Computer Science',      // ← your degree
+    school    : 'XYZ University',            // ← your school
+    year      : '2022 – 2026',              // ← your years
+    field     : 'Software Engineering',      // ← your field
+  },
 
-  mission() {
-    return 'Build clean, useful, and meaningful things.';
-  }
+  career: {
+    role      : 'Frontend Developer',        // ← your role
+    stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
+    currently : 'Open to work',             // ← your status
+  },
 
-  purpose() {
-    return 'Make life better — even in small ways.';
-  }
-}
+  hobbies     : ['Open Source', 'UI Design', 'Chess', 'Coffee'],
 
-export default new Philosophy();
+  philosophy  : 'Build clean, useful, and meaningful things.',
+};
 ```
