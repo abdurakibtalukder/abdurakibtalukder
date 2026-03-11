@@ -13,7 +13,7 @@
 ```js
 const abdurakibtalukder = {
   name        : 'Abdul Rakib Talukder',
-  age         : 15,                         
+  age         : '15',                         
   location    : 'Bangladesh', 
 
   social: {
