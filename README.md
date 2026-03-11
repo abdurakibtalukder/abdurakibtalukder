@@ -10,31 +10,46 @@
 
 <br>
 
-```js
-const abdurakibtalukder = {
-  name        : 'Abdul Rakib Talukder',
-  age         : '15',                         
-  location    : 'Bangladesh', 
+```asm
+; ═══════════════════════════════════════════════════
+;  IDENTITY.ASM — abdurakibtalukder
+; ═══════════════════════════════════════════════════
 
-  social: {
-    username    : '@abdurakibtalukder',
-  },
+section .data
+    name        db  "Abdul Rakib Talukder", 0
+    age         db  15
+    location    db  "Bangladesh", 0
+    username    db  "@abdurakibtalukder", 0
 
-  education: {
-    degree    : 'Humanities (Arts & ICT)',     
-    school    : 'Ambition Public School, Bhairab',       
-    year      : '2026',              
-    field     : 'Software Development', 
-  },
+section .education
+    school      db  "Ambition Public School, Bhairab", 0
+    degree      db  "Humanities — Arts & ICT", 0
+    grad_year   dw  2026
+    field       db  "Software Development", 0
 
-  career: {
-    role      : 'Full stack Developer',     
-    stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
-    currently : 'Busy',
-  },
+section .career
+    role        db  "Full Stack Developer", 0
+    status      db  "BUSY", 0
+    stack       db  "JavaScript", "React", "Node.js", "Python"
+    stack_len   equ $ - stack
 
-  hobbies     : ['Open Source', 'Planning', 'Cycling', 'Gaming'],
+section .hobbies
+    idx_0       db  "Open Source", 0
+    idx_1       db  "Planning", 0
+    idx_2       db  "Cycling", 0
+    idx_3       db  "Gaming", 0
 
-  philosophy  : 'Build clean, useful, and meaningful things.',
-};
+section .text
+global _start
+
+_start:
+    MOV  AX,  [age]                     ; load current age
+    CMP  AX,  18                        ; are we an adult yet?
+    JL   .still_learning                ; nope — keep grinding
+
+.still_learning:
+    PUSH "Build clean, useful,"
+    PUSH "and meaningful things."
+    CALL philosophy
+    JMP  _start                         ; loop forever — never stop
 ```
