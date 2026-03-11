@@ -14,21 +14,22 @@
 const abdurakibtalukder = {
 
   name        : 'Abdul Rakib Talukder',
-  age         : 15,                             
+  age         : 15,
   location    : 'Bangladesh',
   username    : '@abdurakibtalukder',
+  email       : 'abdur@rakib.top',
 
   education: {
     school    : 'Ambition Public School, Bhairab',
     degree    : 'Humanities — Arts & ICT',
     field     : 'Software Development',
-    status    : `ssc in ${2028}`,         
+    status    : `ssc in ${2028}`,
   },
 
   career: {
     role      : 'Full Stack Developer',
     stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
-    status    : 'busy()',                     
+    status    : 'busy()',                        // do not disturb 🚧
     openTo    : ['collabs', 'open source', 'cool ideas'],
   },
 
@@ -36,8 +37,8 @@ const abdurakibtalukder = {
 
   philosophy  : 'Build clean, useful, and meaningful things.',
 
-  getAge()    { return Date.now() - new Date('2011').getTime(); },
-  isAvailable() { return this.career.status !== 'busy()'; },
+  getAge()      { return Date.now() - new Date('2011').getTime(); },
+  isAvailable() { return this.career.status !== 'busy()'; },      // false 💀
 
 };
 ```
