@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%206abdurakibtalukder-light.webp" width="80%">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp" width="80%">
-    <img alt="logo" src="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp" width="80%">
+    <img alt="logo" src="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp" width="70%">
   </picture>
 </p>
 
