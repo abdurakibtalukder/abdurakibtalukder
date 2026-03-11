@@ -13,30 +13,27 @@
 ```js
 const abdurakibtalukder = {
   name        : 'Abdul Rakib Talukder',
-  age         : 22,                          // ← your age
-  location    : 'Dhaka, Bangladesh',         // ← your location
+  age         : 15,                         
+  location    : 'Bangladesh', 
 
   social: {
-    github    : '@abdurakibtalukder',
-    linkedin  : '@abdurakibtalukder',        // ← your handle
-    twitter   : '@abdurakibtalukder',        // ← your handle
-    instagram : '@abdurakibtalukder',        // ← your handle
+    username    : '@abdurakibtalukder',
   },
 
   education: {
-    degree    : 'BSc Computer Science',      // ← your degree
-    school    : 'XYZ University',            // ← your school
-    year      : '2022 – 2026',              // ← your years
-    field     : 'Software Engineering',      // ← your field
+    degree    : 'Humanities (Arts & ICT)',     
+    school    : 'Ambition Public School, Bhairab',       
+    year      : '2022 – 2026',              
+    field     : 'Software Development', 
   },
 
   career: {
-    role      : 'Frontend Developer',        // ← your role
+    role      : 'Full stack Developer',     
     stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
-    currently : 'Open to work',             // ← your status
+    currently : 'Busy',
   },
 
-  hobbies     : ['Open Source', 'UI Design', 'Chess', 'Coffee'],
+  hobbies     : ['Open Source', 'UI Design', 'Cycling', 'Gaming'],
 
   philosophy  : 'Build clean, useful, and meaningful things.',
 };
