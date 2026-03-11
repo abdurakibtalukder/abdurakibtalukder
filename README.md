@@ -23,7 +23,7 @@ const abdurakibtalukder = {
   education: {
     degree    : 'Humanities (Arts & ICT)',     
     school    : 'Ambition Public School, Bhairab',       
-    year      : '2022 – 2026',              
+    year      : '2026',              
     field     : 'Software Development', 
   },
 
