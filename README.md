@@ -1,5 +1,5 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%206abdurakibtalukder-light.webp">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp">
   <img alt="logo" src="[./assets/logo_light_mode.png](https://raw.githubusercontent.com/abdurakibtalukder/abdurakibtalukder/refs/heads/main/assets/Asset%207abdurakibtalukder-dark.webp)">
 </picture>
