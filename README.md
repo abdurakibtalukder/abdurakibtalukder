@@ -35,7 +35,7 @@ const abdurakibtalukder = {
 
   hobbies     : ['Open Source', 'Planning', 'Cycling', 'Gaming'],
 
-  philosophy  : 'Build clean, useful, and meaningful things.',
+  philosophy  : 'Learn from mistakes, chasing goals, and turning every no into the next opportunity.',
 
   getAge()      { return Date.now() - new Date('2011').getTime(); },
   isAvailable() { return this.career.status !== 'busy()'; },
