@@ -9,36 +9,3 @@
 </p>
 
 <br>
-
-```js
-const abdurakibtalukder = {
-
-  name        : 'Abdur Rakib Talukder',
-  age         : 15,
-  location    : 'Bangladesh',
-  username    : '@abdurakibtalukder',
-  email       : 'abdur@rakib.top',
-
-  education: {
-    school    : 'Ambition Public School, Bhairab',
-    degree    : 'Humanities — Arts & ICT',
-    field     : 'Software Development',
-    status    : `ssc in ${2028}`,
-  },
-
-  career: {
-    role      : 'Full Stack Developer',
-    stack     : ['JavaScript', 'React', 'Node.js', 'Python'],
-    status    : 'busy()',                     
-    openTo    : ['collabs', 'open source', 'cool ideas'],
-  },
-
-  hobbies     : ['Open Source', 'Planning', 'Cycling', 'Gaming'],
-
-  philosophy  : 'Learn from mistakes, chasing goals, and turning every no into the next opportunity.',
-
-  getAge()      { return Date.now() - new Date('2011').getTime(); },
-  isAvailable() { return this.career.status !== 'busy()'; },
-
-};
-```
